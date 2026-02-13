@@ -43,6 +43,9 @@ const rejectionMessages = [
   'İnatçısın ama ben daha inatçıyım 😤',
   'Neredeyse kabul ediyordun, gördüm 👀',
   'Kalbin evet diyor, biliyorum 💓',
+  'Kediler bile evet derdi 🐱',
+  'Annene sorayım mı? 📞😂',
+  'Google\'a sordum, evet demen lazımmış 🤓',
 ];
 
 // ---------- DOM ELEMENTS ----------
