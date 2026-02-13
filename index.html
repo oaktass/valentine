@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ezgi - Sevgililer Günün Kutlu Olsun 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
+</head>
+<body>
+
+  <!-- Floating Hearts Background -->
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- Music Toggle -->
+  <button class="music-toggle" id="musicToggle" title="Müzik Aç/Kapat">
+    <span class="music-icon" id="musicIcon">♪</span>
+  </button>
+
+  <!-- ==================== LANDING SCREEN ==================== -->
+  <section class="screen landing-screen active" id="landingScreen">
+    <div class="landing-content">
+      <div class="envelope-icon">💌</div>
+      <h1 class="question-text">
+        Ezgi…<br>
+        <span class="highlight">Benim sevgililer günü sevgilim</span><br>
+        olur musun?
+      </h1>
+      <p class="rejection-text" id="rejectionText"></p>
+      <div class="buttons-container">
+        <button class="btn btn-yes" id="btnYes">Evet 💖</button>
+        <button class="btn btn-no" id="btnNo">Hayır 😏</button>
+      </div>
+      <p class="hint-text" id="hintText"></p>
+    </div>
+  </section>
+
+  <!-- ==================== LOVE LETTER SCREEN ==================== -->
+  <section class="screen letter-screen" id="letterScreen">
+    <div class="celebration" id="celebration"></div>
+
+    <div class="letter-container">
+      <div class="letter-header">
+        <span class="letter-date">14 Şubat 2026</span>
+        <div class="letter-hearts">💕</div>
+      </div>
+
+      <div class="letter-body" id="letterBody">
+        <p class="letter-greeting">Canım Ezgi'm,</p>
+        <p>Seninle geçirdiğim her an, hayatımın en güzel sayfalarına yazılıyor. Gülüşün odayı aydınlatıyor, varlığın her şeyi daha güzel yapıyor.</p>
+        <p>Seni sevmek, her gün yeniden keşfettiğim bir mutluluk. Her bakışında kayboluyorum, her gülüşünde yeniden buluyorum kendimi.</p>
+        <p>Bu sevgililer gününde sana söyleyecek binlerce kelimem var ama hepsi tek bir cümlede birleşiyor:</p>
+        <p class="letter-highlight">Seni çok seviyorum. 💗</p>
+        <p class="letter-signature">Sonsuza kadar senin,<br><span class="signature-name">Özgür</span></p>
+      </div>
+    </div>
+
+    <!-- ==================== PHOTO GALLERY ==================== -->
+    <div class="gallery-section">
+      <h2 class="gallery-title">Bizim Hikayemiz 📸</h2>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Photos will be injected by JS -->
+      </div>
+    </div>
+
+    <div class="footer-message">
+      <p>Seninle her gün sevgililer günü 💕</p>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <!-- Background Music - Yalın - Sensiz Olmaz -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music/sensiz-olmaz.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
